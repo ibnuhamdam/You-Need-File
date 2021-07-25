@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'Poppins-Thin';
+  src: url('../font/Poppins-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('../font/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('../font/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('../font/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('../font/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../font/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('../font/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Black';
+  src: url('../font/Poppins-Black.ttf');
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* Responsive mobile */
+@media screen and (max-width: 480px) {
+    /* Get Started */
+
+    .wrapper-hero{
+        padding: 10px;
+    }
+
+    .hero {
+        background-color: #D6E1FF;
+        padding-left: 43px;
+        padding-right: 43px;
+        padding-top: 52px;
+        padding-bottom: 85px;
+        border-radius: 10px;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 78px;
+        height: 78px;
+        background-color: #678FF5;
+        vertical-align: middle;
+        border-radius: 39px;
+        display: grid;
+        align-items: center;
+        margin-top: 85px;
+    }
+
+    .arrow img {
+        align-items: center;
+        display: grid;
+    }
+
+    .welcome-text {
+        padding: 84px 33px;
+    }
+
+    .welcome-text .wrapper-text h3 {
+        font-family: 'Montserrat-Bold';
+        font-size: 22;
+        color: #1E1E1E;
+        font-weight: bold;
+        letter-spacing: 2.5%;
+    }
+
+    .welcome-text .wrapper-text p {
+        font-family: 'Montserrat-Regular';
+        font-size: 12px;
+        color: #676767;
+        font-weight: normal;
+        letter-spacing: 2.5%;
+        margin-top: 16px;
+    }
+
+    /* Login */
+    .login {
+        background-color: #678FF5;
+        height: 100%;
+        flex: auto;
+    }
+
+    .login .form-login {
+        padding: 64px 50px;
+    }
+
+    .login .form-login h3 {
+        font-family: 'Poppins-Bold';
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 61px;
+    }
+
+    .login .form-login form label {
+        font-family: 'Poppins-SemiBold';
+        font-size: 13px;
+        color: #FFFFFF;
+        margin-bottom: 11px;
+    }
+
+    .login .form-login form input {
+        padding: 11px 20px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        font-family: 'Poppins-Regular';
+        font-size: 12px;
+        color: #393939;
+    }
+
+    .login .btn-login {
+        background-color: #3E3FD6;
+        border-radius: 10px;
+        font-family: 'Poppins-SemiBold';
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+}
