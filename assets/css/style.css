@@ -38,108 +38,241 @@
   src: url('../font/Poppins-Black.ttf');
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
-
 
 /* Responsive mobile */
 @media screen and (max-width: 480px) {
-    /* Get Started */
+  /* Get Started */
 
-    .wrapper-hero{
-        padding: 10px;
-    }
+  .wrapper-hero {
+    padding: 10px;
+  }
 
-    .hero {
-        background-color: #D6E1FF;
-        padding-left: 43px;
-        padding-right: 43px;
-        padding-top: 52px;
-        padding-bottom: 85px;
-        border-radius: 10px;
-    }
+  .hero {
+    background-color: #d6e1ff;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 52px;
+    padding-bottom: 85px;
+    border-radius: 10px;
+  }
 
-    .arrow {
-        position: absolute;
-        width: 78px;
-        height: 78px;
-        background-color: #678FF5;
-        vertical-align: middle;
-        border-radius: 39px;
-        display: grid;
-        align-items: center;
-        margin-top: 85px;
-    }
+  .arrow {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    background-color: #678ff5;
+    vertical-align: middle;
+    border-radius: 39px;
+    display: grid;
+    align-items: center;
+    margin-top: 85px;
+  }
 
-    .arrow img {
-        align-items: center;
-        display: grid;
-    }
+  .arrow img {
+    align-items: center;
+    display: grid;
+  }
 
-    .welcome-text {
-        padding: 84px 33px;
-    }
+  .welcome-text {
+    padding: 84px 33px;
+  }
 
-    .welcome-text .wrapper-text h3 {
-        font-family: 'Montserrat-Bold';
-        font-size: 22;
-        color: #1E1E1E;
-        font-weight: bold;
-        letter-spacing: 2.5%;
-    }
+  .welcome-text .wrapper-text h3 {
+    font-family: 'Montserrat-Bold';
+    font-size: 22;
+    color: #1e1e1e;
+    font-weight: bold;
+    letter-spacing: 2.5%;
+  }
 
-    .welcome-text .wrapper-text p {
-        font-family: 'Montserrat-Regular';
-        font-size: 12px;
-        color: #676767;
-        font-weight: normal;
-        letter-spacing: 2.5%;
-        margin-top: 16px;
-    }
+  .welcome-text .wrapper-text p {
+    font-family: 'Montserrat-Regular';
+    font-size: 12px;
+    color: #676767;
+    font-weight: normal;
+    letter-spacing: 2.5%;
+    margin-top: 16px;
+  }
 
-    /* Login */
-    .login {
-        background-color: #678FF5;
-        height: 100%;
-        flex: auto;
-    }
+  /* Login */
+  .login {
+    background-color: #678ff5;
+    height: 100%;
+    flex: auto;
+  }
 
-    .login .form-login {
-        padding: 64px 50px;
-    }
+  .login .form-login {
+    padding: 64px 50px;
+  }
 
-    .login .form-login h3 {
-        font-family: 'Poppins-Bold';
-        font-size: 20px;
-        color: #FFFFFF;
-        text-align: center;
-        margin-bottom: 61px;
-    }
+  .login .form-login h3 {
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 61px;
+  }
 
-    .login .form-login form label {
-        font-family: 'Poppins-SemiBold';
-        font-size: 13px;
-        color: #FFFFFF;
-        margin-bottom: 11px;
-    }
+  .login .form-login form label {
+    font-family: 'Poppins-SemiBold';
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 11px;
+  }
 
-    .login .form-login form input {
-        padding: 11px 20px;
-        height: 40px;
-        border-radius: 10px;
-        border: none;
-        font-family: 'Poppins-Regular';
-        font-size: 12px;
-        color: #393939;
-    }
+  .login .form-login form input {
+    padding: 11px 20px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poppins-Regular';
+    font-size: 12px;
+    color: #393939;
+  }
 
-    .login .btn-login {
-        background-color: #3E3FD6;
-        border-radius: 10px;
-        font-family: 'Poppins-SemiBold';
-        font-size: 18px;
-        color: #FFFFFF;
-    }
+  .login .btn-login {
+    background-color: #3e3fd6;
+    border-radius: 10px;
+    font-family: 'Poppins-SemiBold';
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  /* Home */
+
+  .home {
+    padding: 30px;
+    flex: 1;
+  }
+
+  /* Home-profile */
+  .home-profile {
+    margin-bottom: 45px;
+  }
+
+  .home-profile .ava {
+    width: 50px;
+    height: 50px;
+    background-color: #e3e7ea;
+    display: grid;
+    align-items: center;
+  }
+
+  .home-profile .welcome {
+    vertical-align: middle;
+    display: grid;
+  }
+
+  .home-profile .welcome h3 {
+    margin-bottom: 0;
+    font-family: 'Poppins-SemiBold';
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 2.5%;
+  }
+
+  .home-profile .welcome p {
+    font-family: 'Poppins-Regular';
+    font-size: 13px;
+    letter-spacing: 4%;
+    color: #000000;
+    margin-bottom: 0;
+  }
+
+  /* Search */
+
+  .search {
+    margin-bottom: 38px;
+  }
+
+  .search .search-input {
+    border: none;
+    height: 42px !important;
+    background-color: #f7f6f9;
+  }
+
+  .search .search-input::placeholder {
+    color: #b8b8b8;
+    padding: 13px;
+    font-family: 'Poppins-Light';
+    letter-spacing: 1%;
+    font-size: 10px;
+  }
+
+  .search .search-input:focus {
+    box-shadow: 0 0 0 0rem;
+    border: 0.5px solid rgba(13, 110, 253, 0.25);
+  }
+
+  .search .input-group-text {
+    background-color: #f7f6f9;
+    border: none;
+  }
+
+  /* Fitur */
+  .home .fitur .list-fitur {
+    display: grid;
+    align-content: center;
+    background-color: rgba(214, 225, 255, 0.24);
+    height: 132px;
+    border-radius: 10px;
+    border: 1px solid #d6e1ff;
+  }
+
+  .home .fitur a {
+    text-decoration: none;
+  }
+
+  .home .fitur .list-fitur p {
+    font-family: 'Poppins-Medium';
+    font-size: 10px;
+    color: #323232;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  /* Navigation Bottom */
+  .navbar {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 0 !important;
+  }
+
+  .navbar .nav-item {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar .nav-item img {
+    text-align: center;
+    width: 31px;
+    height: 31px;
+  }
+
+  .navbar .active p {
+    color: #678ff5 !important;
+  }
+
+  .nav-bottom {
+    padding: 20px 44px;
+  }
+
+  .nav-bottom a {
+    text-decoration: none;
+  }
+
+  .nav-bottom p {
+    margin-top: 7px;
+    text-decoration: none;
+    font-family: 'Poppins-Regular';
+    font-size: 10px;
+    color: #323232;
+  }
 }
