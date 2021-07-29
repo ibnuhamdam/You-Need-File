@@ -22,70 +22,42 @@
     <header class="nav fixed-top header px-3">
       <div class="container-fluid wrapper-header">
         <div class="title text-center py-4">
-          <img src="assets/icon/left-arrow-white.svg" class="img-fluid" alt="" />
+          <img src="assets/icon/left-arrow.svg" class="img-fluid" alt="" />
           <p>Profile</p>
         </div>
       </div>
     </header>
 
-    <div class="alert alert-success" id="alert" role="alert">Data Profile telah berhasil diperbaharui</div>
-
-    <section class="profile">
+    <section class="edit-profile">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-12">
             <div class="circle-out">
               <div class="circle">
                 <img src="assets/icon/person.svg" class="img-fluid mx-auto d-block" alt="" />
               </div>
+              <div class="plus">
+                <img src="assets/icon/plus.svg" class="img-fluid mx-auto d-block" alt="" />
+              </div>
             </div>
-            <div class="profile-name text-center">
-              <h3>Sri Wahyuni</h3>
-              <p>sri.wahyuni@gmail.com</p>
-            </div>
-            <div class="list-item">
-              <a href="edit-profile.html">
-                <div class="list-edit row">
-                  <div class="col-2">
-                    <img src="assets/icon/profile-active.svg" class="img-fluid mx-auto d-block" alt="" />
-                  </div>
-                  <div class="col-8">
-                    <h5>Edit Profile</h5>
-                    <p>Rate Us in Google Play Store</p>
-                  </div>
-                  <div class="col-2">
-                    <img src="assets/icon/right-arrow.svg" class="img-fluid mx-auto" alt="" />
-                  </div>
+            <div class="form-input">
+              <form method="POST" action="profile.html">
+                <div class="mb-4">
+                  <label for="name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" name="name" id="name" value="Sri Wahyuni" />
                 </div>
-              </a>
-              <a href="#">
-                <div class="list-edit row">
-                  <div class="col-2">
-                    <img src="assets/icon/share.svg" class="img-fluid mx-auto d-block" alt="" />
-                  </div>
-                  <div class="col-8">
-                    <h5>Share This App</h5>
-                    <p>Share This App</p>
-                  </div>
-                  <div class="col-2">
-                    <img src="assets/icon/right-arrow.svg" class="img-fluid mx-auto" alt="" />
-                  </div>
+                <div class="mb-4">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input type="email" class="form-control border-0" name="email" id="email" disabled placeholder="sri.wahyuni@google.com" />
                 </div>
-              </a>
-              <a href="#">
-                <div class="list-edit row">
-                  <div class="col-2">
-                    <img src="assets/icon/logout.svg" class="img-fluid mx-auto d-block" alt="" />
-                  </div>
-                  <div class="col-8">
-                    <h5>Logout</h5>
-                    <p>From You Need Apps</p>
-                  </div>
-                  <div class="col-2">
-                    <img src="assets/icon/right-arrow.svg" class="img-fluid mx-auto" alt="" />
-                  </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" name="password" class="form-control" id="password" value="Password" />
                 </div>
-              </a>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="submit">Save Profile</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -127,7 +99,6 @@
 
     <!-- Check Widht JS -->
     <script src="assets/js/match-width.js"></script>
-
     <!-- Alert JS -->
     <script src="assets/js/alert.js"></script>
   </body>

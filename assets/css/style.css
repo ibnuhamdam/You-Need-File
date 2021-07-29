@@ -49,7 +49,7 @@ a {
 }
 
 /* Responsive mobile */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
   /* Get Started */
 
   .wrapper-hero {
@@ -310,8 +310,16 @@ a {
     font-size: 20px;
     color: #000000;
     letter-spacing: 1%;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    padding-right: 24px;
   }
 
+  .header .title p {
+    width: 100%;
+    margin-bottom: 0;
+  }
   /* Rapat */
   .rapat {
     margin-top: 75px;
@@ -357,11 +365,17 @@ a {
   }
 
   /* Profile */
-  .profile {
+
+  .edit-profile {
     margin-top: 75px;
   }
 
-  .profile .circle-out {
+  .profile {
+    margin-top: 20px;
+  }
+
+  .profile .circle-out,
+  .edit-profile .circle-out {
     width: 130px;
     height: 130px;
     border: 1px solid #e9e9e9;
@@ -369,7 +383,8 @@ a {
     margin: auto;
   }
 
-  .profile .circle {
+  .profile .circle,
+  .edit-profile .circle {
     margin: auto;
     background-color: #e3e7ea;
     border-radius: 70px;
@@ -380,7 +395,8 @@ a {
     align-items: center;
   }
 
-  .profile .circle img {
+  .profile .circle img,
+  .edit-profile .circle img {
     margin-left: auto;
     margin-right: auto;
     align-content: center;
@@ -407,12 +423,12 @@ a {
     color: #7d8797;
   }
 
-  .profile .edit-profile {
+  .profile .list-edit {
     padding: 16px;
     border-bottom: 1px solid #eeeeee;
   }
 
-  .profile .edit-profile p {
+  .profile .list-edit p {
     margin-bottom: 0px;
   }
 
@@ -432,5 +448,94 @@ a {
     font-family: 'Poppins-Light';
     font-size: 12px;
     color: #7d8797;
+  }
+
+  /* Edit Profile */
+  .edit-profile .circle-out .plus {
+    width: 33px;
+    height: 33px;
+    background-color: #72ca48;
+    border-radius: 16px;
+    display: grid;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    bottom: 28px;
+    left: 85px;
+  }
+
+  .edit-profile .form-input {
+    padding: 14px 35px;
+  }
+
+  .edit-profile .form-input label {
+    font-family: 'Poppins-Regular';
+    font-size: 15px;
+    color: #7d8797;
+  }
+
+  .edit-profile .form-input input {
+    height: 45px;
+    padding: 11px 14px;
+    font-family: 'Poppins-Regular';
+    color: #112340;
+    border-radius: 10px;
+  }
+
+  .edit-profile .form-input input:focus {
+    box-shadow: 0 0 0 0rem;
+    border: 0.5px solid rgba(0, 102, 203, 0.8);
+  }
+
+  .edit-profile .form-input button {
+    background-color: #678ff5 !important;
+    font-family: 'Poppins-Regular';
+    font-size: 15px;
+    color: #ffffff;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 27px;
+  }
+
+  /* Alert */
+  .alert {
+    z-index: 4;
+  }
+
+  .detail-rapat {
+    margin-top: 62px;
+    padding: 42px;
+  }
+
+  .detail-rapat .wrapper-informasi h5 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+    color: #323232;
+    letter-spacing: 1%;
+    line-height: 158%;
+    margin-bottom: 20px;
+  }
+
+  .detail-rapat .wrapper-informasi p {
+    margin-bottom: 0px;
+    font-family: 'Poppins-Regular';
+    font-size: 10px;
+    letter-spacing: 1%;
+    color: #8f8f8f;
+  }
+
+  .detail-rapat .wrapper-informasi .text-jam {
+    color: #4eca13;
+  }
+
+  .detail-rapat .wrapper-informasi img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .detail-rapat .wrapper-informasi .instansi p {
+    margin-left: 20px;
   }
 }
