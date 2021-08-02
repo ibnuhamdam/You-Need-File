@@ -25,54 +25,73 @@
       <div class="container-fluid wrapper-header">
         <div class="title text-center py-4">
           <img src="assets/icon/left-arrow.svg" class="img-fluid" alt="" />
-          <p>Profile</p>
+          <p>Meeting Details</p>
         </div>
       </div>
     </header>
+    <div class="file container">
+      <div class="row">
+        <div class="col-12">
+          <div class="search">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><img src="assets/icon/search.svg" alt="" /></span>
+              <input type="text" name="search" class="form-control search-input" placeholder="Cari file yang anda inginkan" aria-label="Username" aria-describedby="basic-addon1" />
+            </div>
+          </div>
 
-    <section class="edit-profile">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="circle-out">
-              <div class="circle">
-                <img src="assets/icon/person.svg" class="img-fluid mx-auto d-block" alt="" />
-              </div>
-              <div class="plus">
-                <img src="assets/icon/plus.svg" class="img-fluid mx-auto d-block" alt="" />
+          <!-- File -->
+          <div class="meeting-file">
+            <h5>DD Penanganan Kali Anyar</h5>
+            <div class="list-file mt-3">
+              <div class="row">
+                <div class="col-1 item">
+                  <img src="assets/icon/small-form.svg" alt="" />
+                </div>
+                <div class="col-10 item">
+                  <a href="#">
+                    <p>Daftar Hadir DD Penanganan Kali Anyar</p>
+                  </a>
+                </div>
+                <div class="col-1 item">
+                  <a href="#">
+                    <img src="assets/icon/menu-item.svg" alt="" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="form-input">
-              <form method="POST" action="profile.html">
-                <div class="mb-4">
-                  <label for="name" class="form-label">Full Name</label>
-                  <input type="text" class="form-control" name="name" id="name" value="Sri Wahyuni" />
+          </div>
+          <!-- File -->
+          <div class="meeting-file">
+            <h5>DD Penanganan Kali Anyar</h5>
+            <div class="list-file mt-3">
+              <div class="row">
+                <div class="col-1 item">
+                  <img src="assets/icon/small-form.svg" alt="" />
                 </div>
-                <div class="mb-4">
-                  <label for="email" class="form-label">Email Address</label>
-                  <input type="email" class="form-control border-0" name="email" id="email" disabled placeholder="sri.wahyuni@google.com" />
+                <div class="col-10 item">
+                  <a href="#">
+                    <p>Daftar Hadir DD Penanganan Kali Anyar</p>
+                  </a>
                 </div>
-                <div class="mb-3">
-                  <label for="password" class="form-label">Password</label>
-                  <input type="password" name="password" class="form-control" id="password" value="Password" />
+                <div class="col-1 item">
+                  <a href="#">
+                    <img src="assets/icon/menu-item.svg" alt="" />
+                  </a>
                 </div>
-                <div class="d-grid gap-2">
-                  <button class="btn btn-primary" type="submit">Save Profile</button>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- Bottom Tab Navigation -->
 
-    <nav class="navbar fixed-bottom shadow-lg navbar-light bg-body">
+    <nav class="navbar fixed-bottom shadow-nav navbar-light bg-body">
       <div class="container-fluid nav-bottom">
-        <a href="home.html">
+        <a href="home.html" class="active">
           <li class="nav-item">
-            <img src="assets/icon/file.svg" class="img-fluid mx-auto" alt="" />
+            <img src="assets/icon/file-active.svg" class="img-fluid mx-auto" alt="" />
             <p>File</p>
           </li>
         </a>
@@ -82,9 +101,9 @@
             <p>Meeting</p>
           </li>
         </a>
-        <a href="#">
-          <li class="nav-item active">
-            <img src="assets/icon/profile-active.svg" class="img-fluid mx-auto" alt="" />
+        <a href="profile.html">
+          <li class="nav-item">
+            <img src="assets/icon/profile.svg" class="img-fluid mx-auto" alt="" />
             <p>Profile</p>
           </li>
         </a>
