@@ -1,0 +1,579 @@
+@font-face {
+  font-family: 'Poppins-Thin';
+  src: url('../font/Poppins-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url('../font/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('../font/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('../font/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url('../font/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../font/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-ExtraBold';
+  src: url('../font/Poppins-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-Black';
+  src: url('../font/Poppins-Black.ttf');
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 780px) {
+  /* Get Started */
+
+  .wrapper-hero {
+    padding: 10px;
+  }
+
+  .hero {
+    background-color: #d6e1ff;
+    padding-left: 43px;
+    padding-right: 43px;
+    padding-top: 52px;
+    padding-bottom: 85px;
+    border-radius: 10px;
+  }
+
+  .arrow {
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    background-color: #678ff5;
+    vertical-align: middle;
+    border-radius: 39px;
+    display: grid;
+    align-items: center;
+    margin-top: 85px;
+  }
+
+  .arrow img {
+    align-items: center;
+    display: grid;
+  }
+
+  .welcome-text {
+    padding: 84px 33px;
+  }
+
+  .welcome-text .wrapper-text h3 {
+    font-family: 'Montserrat-Bold';
+    font-size: 22;
+    color: #1e1e1e;
+    font-weight: bold;
+    letter-spacing: 2.5%;
+  }
+
+  .welcome-text .wrapper-text p {
+    font-family: 'Montserrat-Regular';
+    font-size: 12px;
+    color: #676767;
+    font-weight: normal;
+    letter-spacing: 2.5%;
+    margin-top: 16px;
+  }
+
+  /* Login */
+  .login {
+    background-color: #678ff5;
+    min-height: 100%;
+    flex: auto;
+  }
+
+  .login .form-login {
+    padding: 64px 50px;
+  }
+
+  .login .form-login h3 {
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 61px;
+  }
+
+  .login .form-login form label {
+    font-family: 'Poppins-SemiBold';
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 11px;
+  }
+
+  .login .form-login form input {
+    padding: 11px 20px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poppins-Regular';
+    font-size: 12px;
+    color: #393939;
+  }
+
+  .login .btn-login {
+    background-color: #3e3fd6;
+    border-radius: 10px;
+    font-family: 'Poppins-SemiBold';
+    font-size: 18px;
+    color: #ffffff;
+  }
+
+  /* Home */
+
+  .home {
+    padding: 30px;
+    flex: 1;
+  }
+
+  /* Home-profile */
+  .home-profile {
+    margin-bottom: 45px;
+  }
+
+  .home-profile .ava {
+    width: 50px;
+    height: 50px;
+    background-color: #e3e7ea;
+    display: grid;
+    align-items: center;
+  }
+
+  .home-profile .welcome {
+    vertical-align: middle;
+    display: grid;
+  }
+
+  .home-profile .welcome h3 {
+    margin-bottom: 0;
+    font-family: 'Poppins-SemiBold';
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 2.5%;
+  }
+
+  .home-profile .welcome p {
+    font-family: 'Poppins-Regular';
+    font-size: 13px;
+    letter-spacing: 4%;
+    color: #000000;
+    margin-bottom: 0;
+  }
+
+  /* Search */
+
+  .search {
+    margin-bottom: 38px;
+  }
+
+  .search .search-input {
+    border: none;
+    height: 42px !important;
+    background-color: #f7f6f9;
+  }
+
+  .search .search-input::placeholder {
+    color: #b8b8b8;
+    padding: 13px;
+    font-family: 'Poppins-Light';
+    letter-spacing: 1%;
+    font-size: 10px;
+  }
+
+  .search .search-input:focus {
+    box-shadow: 0 0 0 0rem;
+    border: 0.5px solid rgba(13, 110, 253, 0.25);
+  }
+
+  .search .input-group-text {
+    background-color: #f7f6f9;
+    border: none;
+  }
+
+  /* Fitur */
+  .home .fitur .list-fitur {
+    display: grid;
+    align-content: center;
+    background-color: rgba(214, 225, 255, 0.24);
+    height: 132px;
+    border-radius: 10px;
+    border: 1px solid #d6e1ff;
+  }
+
+  .home .fitur a {
+    text-decoration: none;
+  }
+
+  .home .fitur .list-fitur p {
+    font-family: 'Poppins-Medium';
+    font-size: 10px;
+    color: #323232;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  /* Navigation Bottom */
+  .navbar {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 0 !important;
+  }
+
+  .navbar .nav-item {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar .nav-item img {
+    text-align: center;
+    width: 31px;
+    height: 31px;
+  }
+
+  .navbar .active p {
+    color: #678ff5 !important;
+  }
+
+  .nav-bottom {
+    padding: 20px 44px;
+  }
+
+  .nav-bottom a {
+    text-decoration: none;
+  }
+
+  .nav-bottom p {
+    margin-top: 7px;
+    text-decoration: none;
+    font-family: 'Poppins-Regular';
+    font-size: 10px;
+    color: #323232;
+  }
+
+  .nav-pills .nav-link.active {
+    color: #678ff5 !important;
+    background-color: #ffffff !important;
+    border-bottom: 2px solid #678ff5 !important;
+    border-radius: 0;
+  }
+
+  .nav-pills .nav-link {
+    font-family: 'Poppins-SemiBold';
+    font-size: 12px;
+    color: #676767 !important;
+    padding-bottom: 14px;
+  }
+
+  .shadow-nav {
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Header */
+
+  .header {
+    z-index: 3;
+    background-color: white;
+  }
+
+  .header .title {
+    font-family: 'Poppins-Bold';
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 1%;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+  }
+
+  .header .title p {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  /* Rapat */
+  .rapat {
+    margin-top: 75px;
+  }
+
+  /* Navs */
+  .tab-content {
+    background-color: #d9e5ff;
+    min-height: 640px;
+  }
+
+  .tab-content .card-body p {
+    font-family: 'Poppins-Medium';
+    font-size: 12px;
+    color: #323232;
+    letter-spacing: 1%;
+  }
+
+  .tab-content .card {
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(173, 173, 173, 0.3);
+  }
+
+  .tab-content .card .tanggal,
+  .tab-content .card .ruangan {
+    align-content: center;
+    margin-bottom: 10px;
+  }
+
+  .tab-content .card .tanggal p,
+  .tab-content .card .ruangan p {
+    margin: 0px;
+    align-content: center;
+    font-family: 'Poppins-Regular';
+    font-size: 9px;
+    letter-spacing: 1%;
+    color: #8f8f8f;
+  }
+
+  .tab-content .card .tanggal .text-jam {
+    color: #4eca13;
+    font-weight: 500;
+  }
+
+  /* Profile */
+
+  .edit-profile {
+    margin-top: 75px;
+  }
+
+  .profile {
+    margin-top: 75px;
+  }
+
+  .profile .circle-out,
+  .edit-profile .circle-out {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #e9e9e9;
+    border-radius: 70px;
+    margin: auto;
+  }
+
+  .profile .circle,
+  .edit-profile .circle {
+    margin: auto;
+    background-color: #e3e7ea;
+    border-radius: 70px;
+    width: 80%;
+    height: 80%;
+    margin-top: 12px;
+    display: grid;
+    align-items: center;
+  }
+
+  .profile .circle img,
+  .edit-profile .circle img {
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    vertical-align: middle;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+  }
+
+  .profile .profile-name {
+    margin-top: 16px;
+    margin-bottom: 37px;
+  }
+
+  .profile .profile-name h3 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 20px;
+    color: #112340;
+  }
+
+  .profile .profile-name p {
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    color: #7d8797;
+  }
+
+  .profile .list-edit {
+    padding: 16px;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .profile .list-edit p {
+    margin-bottom: 0px;
+  }
+
+  .profile .list-item .col-2 {
+    display: grid;
+    align-items: center;
+  }
+
+  .profile .list-item h5 {
+    margin-bottom: 1px;
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    color: #112340;
+  }
+
+  .profile .list-item p {
+    font-family: 'Poppins-Light';
+    font-size: 12px;
+    color: #7d8797;
+  }
+
+  /* Edit Profile */
+  .edit-profile .circle-out .plus {
+    width: 33px;
+    height: 33px;
+    background-color: #72ca48;
+    border-radius: 16px;
+    display: grid;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    bottom: 28px;
+    left: 85px;
+  }
+
+  .edit-profile .form-input {
+    padding: 14px 35px;
+  }
+
+  .edit-profile .form-input label {
+    font-family: 'Poppins-Regular';
+    font-size: 15px;
+    color: #7d8797;
+  }
+
+  .edit-profile .form-input input {
+    height: 45px;
+    padding: 11px 14px;
+    font-family: 'Poppins-Regular';
+    color: #112340;
+    border-radius: 10px;
+  }
+
+  .edit-profile .form-input input:focus {
+    box-shadow: 0 0 0 0rem;
+    border: 0.5px solid rgba(0, 102, 203, 0.8);
+  }
+
+  .edit-profile .form-input button {
+    background-color: #678ff5 !important;
+    font-family: 'Poppins-Regular';
+    font-size: 15px;
+    color: #ffffff;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 27px;
+  }
+
+  /* Alert */
+  .alert {
+    width: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+  }
+
+  .detail-rapat {
+    margin-top: 62px;
+    padding: 42px;
+  }
+
+  .detail-rapat .wrapper-informasi h5 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 16px;
+    color: #323232;
+    letter-spacing: 1%;
+    line-height: 158%;
+    margin-bottom: 20px;
+  }
+
+  .detail-rapat .wrapper-informasi p {
+    margin-bottom: 0px;
+    font-family: 'Poppins-Regular';
+    font-size: 10px;
+    letter-spacing: 1%;
+    color: #8f8f8f;
+  }
+
+  .detail-rapat .wrapper-informasi .text-jam {
+    color: #4eca13;
+  }
+
+  .detail-rapat .wrapper-informasi img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .detail-rapat .wrapper-informasi .instansi p {
+    margin-left: 20px;
+  }
+
+  /* File  */
+  .file {
+    margin-top: 75px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .meeting-file {
+    margin-top: 39px;
+  }
+
+  .meeting-file h5 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 12px;
+    letter-spacing: 1%;
+    color: #323232;
+  }
+
+  .meeting-file .list-file {
+    padding: 13px 5px;
+    border-bottom: 0.6px solid #e5e5e5;
+  }
+
+  .meeting-file .list-file p {
+    font-family: 'Poppins-Medium';
+    font-size: 9px;
+    color: #676767;
+    letter-spacing: 1%;
+    margin: 0;
+  }
+
+  .meeting-file .list-file .item {
+    align-items: center;
+    display: grid;
+  }
+}
