@@ -9,10 +9,11 @@
        <div class="container">
            <div class="row">
                <div class="col-md-12">
-                   <div class="circle-out">
-                       <div class="circle">
-                           <img src="<?= base_url(); ?>/icon/person.svg" class="img-fluid mx-auto d-block" alt="" />
-                       </div>
+                   <div class="circle-out d-grid">
+                       <img src="<?= base_url(); ?>/uploads/<?= $user->user_image; ?>" class="img-fluid rounded-circle mx-auto" alt="" style="width: 130px;height: 130px;" />
+                       <!-- <div class="circle">
+
+                       </div> -->
                    </div>
                    <div class="profile-name text-center">
                        <h3>
@@ -35,7 +36,7 @@
                                </div>
                            </div>
                        </a>
-                       <a href="#">
+                       <a href="whatsapp://send?text=Hi+Let%27s+Download+You+Need+Files+Now+%21">
                            <div class="list-edit row">
                                <div class="col-2">
                                    <img src="<?= base_url(); ?>/icon/share.svg" class="img-fluid mx-auto d-block" alt="" />

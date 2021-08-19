@@ -2,13 +2,13 @@
 
 <?= $this->section('content') ?>
 
+<?= view('Myth\Auth\Views\_message_block') ?>
 
 <section class="login container">
     <div class="row">
-        <div class="col-12 form-login">
+        <div class="col-12 form-login col-md-6 offset-md-3">
             <h3><?= lang('Auth.loginTitle') ?></h3>
-            <?= view('Myth\Auth\Views\_message_block') ?>
-            <form action="<?= route_to('login') ?>" method="post">
+            <form action="<?= base_url('login') ?>" method="post">
                 <?= csrf_field() ?>
                 <?php if ($config->validFields === ['email']) : ?>
                     <div class="mb-4">
@@ -21,7 +21,7 @@
                 <?php else : ?>
                     <div class="mb-4">
                         <label for="email" class="form-label"><?= lang('Auth.emailOrUsername') ?></label>
-                        <input type="email" class="form-control <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>" id="email" name="login" placeholder="<?= lang('Auth.emailOrUsername') ?>">
+                        <input type="text" class="form-control <?php if (session('errors.login')) : ?>is-invalid<?php endif ?>" id="email" name="login" placeholder="<?= lang('Auth.emailOrUsername') ?>">
                         <div class="invalid-feedback">
                             <?= session('errors.login') ?>
                         </div>

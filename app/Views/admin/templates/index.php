@@ -19,6 +19,18 @@
     <!-- Custom styles for this template-->
     <link href="<?= base_url(); ?>/admin-asset/css/sb-admin-2.min.css" rel="stylesheet">
 
+
+    <!-- Custom styles for this page -->
+    <link href="<?= base_url(); ?>/admin-asset/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" href="<?= base_url(); ?>/admin-asset/vendor/select/bootstrap-select.min.css">
+
+    <!-- the fileinput plugin styling CSS file -->
+    <link href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-fileinput@5.2.2/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" crossorigin="anonymous"> -->
+
+
 </head>
 
 <body id="page-top">
@@ -96,6 +108,29 @@
 
     <!-- Custom scripts for all pages-->
     <script src="<?= base_url(); ?>/admin-asset/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="<?= base_url(); ?>/admin-asset/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url(); ?>/admin-asset/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="<?= base_url(); ?>/admin-asset/js/demo/datatables-demo.js"></script>
+
+    <!-- BS Input File -->
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+
+    <!-- BS Select -->
+    <script src="<?= base_url(); ?>/admin-asset/vendor/select/bootstrap-select.min.js"></script>
+
+    <!-- JS Input Files -->
+    <script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-fileinput@5.2.2/js/plugins/piexif.min.js" type="text/javascript"></script>
+    <!-- the main fileinput plugin script JS file -->
+    <script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-fileinput@5.2.2/js/fileinput.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-fileinput@5.2.2/themes/fas/theme.min.js"></script>
+    <!-- following theme script is needed to use the Font Awesome 5.x theme (`fas`). Uncomment if needed. -->
+    <!-- Begin Page Content -->
+    <?= $this->renderSection('scripts'); ?>
+
 
 </body>
 

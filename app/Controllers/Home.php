@@ -19,4 +19,11 @@ class Home extends BaseController
 		$data['header'] = false;
 		return view('user/index', $data);
 	}
+
+	public function maintenance()
+	{
+		$data['header'] = false;
+		$data['bottom'] = false;
+		return view('user/maintenance', $data);
+	}
 }

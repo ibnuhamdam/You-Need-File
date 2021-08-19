@@ -12,7 +12,7 @@
                 <p>Meeting</p>
             </li>
         </a>
-        <a href="<?= base_url('user/profile') ?>" class="<?= ($bottom === 'profile' ? 'active' : '') ?>">
+        <a href="<?= base_url('user/profile') . '/' . user()->id ?>" class="<?= ($bottom === 'profile' ? 'active' : '') ?>">
             <li class="nav-item">
                 <img src="<?= base_url(); ?>/icon/profile<?= ($bottom === 'profile' ? '-active' : '') ?>.svg" class="img-fluid mx-auto" alt="" />
                 <p>Profile</p>
